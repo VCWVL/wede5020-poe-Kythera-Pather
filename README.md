@@ -215,6 +215,16 @@ Several key improvements were made to transition the project from its foundation
 - **Responsive Design:** Implemented media queries to ensure the layout adapts to different screen sizes for a seamless experience on mobile, tablet, and desktop.
 - **Structural HTML Improvements:** Refined HTML across all pages for better CSS compatibility, removing unnecessary tags and improving navigation.
 - **New Pages:** Added **Login** and **Signup** pages to build out user account functionality.
+
+### POE-Final
+- Made chnageres from feedback given from lecture on part 2. Added typography styles to improve as the text elements are styled, but there was a need for areas for improvement. Improved Pseudo-classes as they are used but incorrectly or insufficiently. The Interactive elements are styled, but there were significant issues.
+- Added a Proceed to checkout page for te customer to comfirm their order.
+- Added a Main java and book java files for the Website to function and searchbar to work and find different books.
+- -Had to chnage some html code to fit th search bar and add to cart feature.
+
+
+
+  
 ---
 # Referencing 
 - Alamy. (n.d.). Conceptual hand writing showing workshop agenda concept. Available at: <https://www.alamy.com/conceptual-hand-writing-showing-workshop-agenda-concept-meaning-helps-you-to-ensure-that-your-workshop-stays-on-schedule-image343420021.html>  [Accessed 22 August 2025]
