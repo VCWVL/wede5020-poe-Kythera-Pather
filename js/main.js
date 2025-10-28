@@ -434,37 +434,41 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault(); // Prevent the default form submission (page reload)
 
             const name = document.getElementById('name').value;
-            const subject = document.getElementById('subject').value.toLowerCase();
+            const enquiryType = document.getElementById('enquiry-type').value;
             const formResponseContainer = document.getElementById('form-response');
 
             let responseMessage = '';
 
-            // "Process" the subject to generate a dynamic response
-            if (subject.includes('stock') || subject.includes('availability') || subject.includes('product')) {
-                responseMessage = `
-                    <h3>Thank you, ${name}!</h3>
-                    <p>Regarding your product enquiry, our team is checking stock levels now. We will email you with availability and pricing details within the next 2-3 business hours.</p>
-                    <p>Reference: PROD-${Date.now()}</p>
-                `;
-            } else if (subject.includes('service') || subject.includes('recommendation')) {
-                responseMessage = `
-                    <h3>Thank you, ${name}!</h3>
-                    <p>For service-related questions, our customer care team is on it! You can expect a detailed response via email shortly. We aim to reply to all service enquiries within 24 hours.</p>
-                    <p>Reference: SERV-${Date.now()}</p>
-                `;
-            } else if (subject.includes('volunteer') || subject.includes('sponsor')) {
-                responseMessage = `
-                    <h3>Thank you for your interest, ${name}!</h3>
-                    <p>We are thrilled you're interested in supporting our community initiatives. Our events coordinator will be in touch with you soon to discuss volunteer and sponsorship opportunities.</p>
-                    <p>Reference: COMM-${Date.now()}</p>
-                `;
-            } else {
-                // A general response for other enquiries
-                responseMessage = `
-                    <h3>Thank you for your message, ${name}!</h3>
-                    <p>We have received your enquiry and will get back to you as soon as possible. Our standard response time is 1-2 business days.</p>
-                    <p>Reference: GEN-${Date.now()}</p>
-                `;
+            // Process the enquiry type to generate a dynamic response, like the example project
+            switch (enquiryType) {
+                case 'stock':
+                    responseMessage = `
+                        <h3>Thank you, ${name}!</h3>
+                        <p>For stock availability, please include the book title and author in your message. Our team will check our inventory and get back to you within 2-3 business hours.</p>
+                        <p>Reference: PROD-${Date.now()}</p>
+                    `;
+                    break;
+                case 'order_status':
+                    responseMessage = `
+                        <h3>Thank you, ${name}!</h3>
+                        <p>For questions about an online order, please include your order number in the message. Our support team will provide you with an update as soon as possible.</p>
+                        <p>Reference: ORD-${Date.now()}</p>
+                    `;
+                    break;
+                case 'loyalty':
+                    responseMessage = `
+                        <h3>Thank you for your interest, ${name}!</h3>
+                        <p>We're happy to help with your loyalty program query. Our team will review your message and respond with information about your points and benefits shortly.</p>
+                        <p>Reference: LOYAL-${Date.now()}</p>
+                    `;
+                    break;
+                case 'event':
+                    responseMessage = `
+                        <h3>Thank you, ${name}!</h3>
+                        <p>For more information about our events, please specify the event name or date in your message. Our events coordinator will get back to you with all the details.</p>
+                        <p>Reference: EVENT-${Date.now()}</p>
+                    `;
+                    break;
             }
 
             // Hide the form and display the response message
@@ -513,6 +517,49 @@ document.addEventListener('DOMContentLoaded', () => {
         // Also close if user clicks on the dark overlay background
         welcomeModal.addEventListener('click', (e) => {
             if (e.target === welcomeModal) { closeModal(); }
+        });
+    }
+
+    // --- 12. Contact Form Mailto Logic ---
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
+
+            const name = contactForm.querySelector('#name').value;
+            const messageType = contactForm.querySelector('#message-type').value;
+
+            // Check if the message type is a complaint
+            if (messageType === 'Complaint') {
+                // --- Logic to open email client for complaints ---
+                const userEmail = contactForm.querySelector('#email').value;
+                const subject = contactForm.querySelector('#subject').value;
+                const message = contactForm.querySelector('#message').value;
+                const recipientEmail = 'exclusivebooks@gmail.com';
+
+                const emailSubject = `[${messageType}] - ${subject}`;
+                const emailBody = `
+Hello,
+
+${message}
+
+--------------------------------
+From: ${name}
+Email: ${userEmail}
+                `;
+
+                // Create and trigger the mailto link
+                window.location.href = `mailto:${recipientEmail}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+
+            } else {
+                // --- Logic for all other message types (show on-page response) ---
+                const formResponseContainer = document.getElementById('form-response');
+                const responseMessage = `<h3>Thank you, ${name}!</h3><p>We have received your feedback and will get back to you shortly.</p>`;
+
+                contactForm.style.display = 'none';
+                formResponseContainer.innerHTML = responseMessage;
+                formResponseContainer.style.display = 'block';
+            }
         });
     }
 });
