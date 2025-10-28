@@ -426,4 +426,93 @@ document.addEventListener('DOMContentLoaded', () => {
 
         displayCheckoutSummary();
     }
+
+    // --- 10. Enquiry Form Processing ---
+    const enquiryForm = document.getElementById('enquiry-form');
+    if (enquiryForm) {
+        enquiryForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent the default form submission (page reload)
+
+            const name = document.getElementById('name').value;
+            const subject = document.getElementById('subject').value.toLowerCase();
+            const formResponseContainer = document.getElementById('form-response');
+
+            let responseMessage = '';
+
+            // "Process" the subject to generate a dynamic response
+            if (subject.includes('stock') || subject.includes('availability') || subject.includes('product')) {
+                responseMessage = `
+                    <h3>Thank you, ${name}!</h3>
+                    <p>Regarding your product enquiry, our team is checking stock levels now. We will email you with availability and pricing details within the next 2-3 business hours.</p>
+                    <p>Reference: PROD-${Date.now()}</p>
+                `;
+            } else if (subject.includes('service') || subject.includes('recommendation')) {
+                responseMessage = `
+                    <h3>Thank you, ${name}!</h3>
+                    <p>For service-related questions, our customer care team is on it! You can expect a detailed response via email shortly. We aim to reply to all service enquiries within 24 hours.</p>
+                    <p>Reference: SERV-${Date.now()}</p>
+                `;
+            } else if (subject.includes('volunteer') || subject.includes('sponsor')) {
+                responseMessage = `
+                    <h3>Thank you for your interest, ${name}!</h3>
+                    <p>We are thrilled you're interested in supporting our community initiatives. Our events coordinator will be in touch with you soon to discuss volunteer and sponsorship opportunities.</p>
+                    <p>Reference: COMM-${Date.now()}</p>
+                `;
+            } else {
+                // A general response for other enquiries
+                responseMessage = `
+                    <h3>Thank you for your message, ${name}!</h3>
+                    <p>We have received your enquiry and will get back to you as soon as possible. Our standard response time is 1-2 business days.</p>
+                    <p>Reference: GEN-${Date.now()}</p>
+                `;
+            }
+
+            // Hide the form and display the response message
+            enquiryForm.style.display = 'none';
+            formResponseContainer.innerHTML = responseMessage;
+            formResponseContainer.style.display = 'block';
+        });
+    }
+
+    // --- 11. Welcome Modal Logic ---
+    const welcomeModal = document.getElementById('welcome-modal');
+    if (welcomeModal) {
+        const closeModalBtn = document.getElementById('modal-close-btn');
+        const enterSiteBtn = document.getElementById('modal-enter-btn');
+
+        // Function to close the modal and show the main content
+        const closeModal = () => {
+            welcomeModal.classList.remove('visible');
+            // Find all hidden content and make it visible
+            document.querySelectorAll('.content-hidden').forEach(el => {
+                el.style.visibility = 'visible';
+                el.style.opacity = '1';
+                el.style.transition = 'opacity 0.5s ease-in';
+            });
+        };
+
+        // Show modal only if it hasn't been shown in this session
+        if (!sessionStorage.getItem('welcomeModalShown')) {
+            // Hide content immediately if modal will be shown
+            document.querySelectorAll('.content-hidden').forEach(el => el.style.transition = 'none');
+            // Use a small delay to let the page render first
+            setTimeout(() => {
+                welcomeModal.classList.add('visible');
+                sessionStorage.setItem('welcomeModalShown', 'true');
+            }, 500);
+        }
+
+        // If the modal was already shown, just reveal the content immediately
+        if (sessionStorage.getItem('welcomeModalShown')) {
+            closeModal();
+        }
+
+        // Event listeners to close the modal
+        closeModalBtn.addEventListener('click', closeModal);
+        enterSiteBtn.addEventListener('click', closeModal);
+        // Also close if user clicks on the dark overlay background
+        welcomeModal.addEventListener('click', (e) => {
+            if (e.target === welcomeModal) { closeModal(); }
+        });
+    }
 });
