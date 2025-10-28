@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore inspiring and powerful life stories with our collection of autobiography books. Discover memoirs from influential figures.">
+    <title>Autobiography Books | Exclusive Books</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Pridi:wght@400;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Header-->
+    <header class="site-header">
+        <!--The code shows the logo image-->
+        <a href="index.html" class="logo-link"><img src="_images/exclusive_book_logo.jpg" alt="Exclusive Books Logo" class="logo"></a>
+        <div class="header-content">
+            <h1>Exclusive Books</h1>
+            <div class="search-bar">
+                <!--Allows the user to search up a book name-->
+                <input type="text" id="header-search-input" placeholder="Search for your books here...">
+                <button id="header-search-button">Search</button>
+            </div>
+        </div>
+        <!--Navigation to diffrent pagers in the website and are connected -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="stores.html">Stores</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Category Navigation -->
+         <!--The code helps to link the pagers to its connected and go into one pahe into the next while also displaying the categories-->
+        <nav class="category-nav">
+            <ul>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="non-fiction.html">Non-Fiction</a></li>
+                <li><a href="children.html">Children</a></li>
+                <li><a href="autobiographies.html" class="active">Autobiographies</a></li>
+                <li><a href="bookTok.html">BookTok</a></li>
+                <li><a href="religion.html">Religion</a></li>
+                <li><a href="biography.html">Biography</a></li>
+            </ul>
+        </nav>
+
+        <!--Category Banner-->
+        <section class="page-banner">
+            <img src="_images/bookstore_banner.jpg" alt="A cozy bookstore aisle with warm lighting and rows of books">
+            <div class="banner-text">
+                <h2>Explore Our Autobiography Collection</h2>
+                <p>Discover the personal stories of influential figures and their journeys.</p>
+            </div>
+        </section>
+
+        <!--Autobiography Section-->
+        <section class="content-section">
+            <h2>Popular Autobiography Books</h2>
+            <div class="filter-bar">
+                <input type="text" id="book-filter" placeholder="Filter books by title or author...">
+            </div>
+            <div class="book-grid">
+                <div class="book-card" data-title="Becoming" data-author="Michelle Obama" data-price="375.00" data-image="_images/becoming_autobiography.jpg">
+                    <img src="_images/becoming_autobiography.jpg" alt="Becoming by Michelle Obama">
+                    <div class="book-info">
+                        <!--Code implements the books name-->
+                        <h3>Becoming</h3>
+                        <!--Code implements the books author-->
+                        <p class="author">Michelle Obama</p>
+                        <!--Code implements the books summary-->
+                        <p class="summary">The inspiring and intimate memoir of the former First Lady of the United States.</p>
+                        <!--Code implements the books reivew/rating-->
+                        <p><strong>Review/Rating:</strong> “Inspiring and practical, it offers timeless wisdom on discipline, ambition, and the pursuit of success.” <strong>4.9/5 Stars</strong></p>
+                        <!--Code implements the books price-->
+                        <p class="price">R375.00</p>
+                        <!--Code implements the add to cart button, which will take the user to the add to cart page-->
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="book-card" data-title="I Am Malala" data-author="Malala Yousafzai" data-price="350.00" data-image="_images/i_am_malala_autobiography.jpg">
+                    <img src="_images/i_am_malala_autobiography.jpg" alt="I Am Malala">
+                    <div class="book-info">
+                        <h3>I Am Malala</h3>
+                        <p class="author">Malala Yousafzai</p>
+                        <p class="summary">The powerful memoir of the young activist who stood up for education and survived an attack by the Taliban.</p>
+                         <p><strong>Review/Rating:</strong> Courageous and inspiring, Malala’s story is a testament to the importance of education and the strength of the human spirit. <strong>4.7/5 Stars</strong></p>
+                        <p class="price">R350.00</p>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="book-card" data-title="Long Walk to Freedom" data-author="Nelson Mandela" data-price="400.00" data-image="_images/long_walk_to_freedom_autobiography.jpg">
+                    <img src="_images/long_walk_to_freedom_autobiography.jpg" alt="Long Walk to Freedom">
+                    <div class="book-info">
+                        <h3>Long Walk to Freedom</h3>
+                        <p class="author">Nelson Mandela</p>
+                        <p class="summary">The autobiography of Nelson Mandela, chronicling his life and fight against apartheid in South Africa.</p>
+                        <p><strong>Review/Rating:</strong>Powerful and moving, Mandela’s story is a testament to resilience, justice, and the fight for equality. <strong>5/5 Stars</strong></p>
+                        <p class="price">R400.00</p>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="book-card" data-title="The Diary of a Young Girl" data-author="Anne Frank" data-price="320.00" data-image="_images/the_diary_of_a_young_girl_autobiography.jpg">
+                    <img src="_images/the_diary_of_a_young_girl_autobiography.jpg" alt="The Diary of a Young Girl">
+                    <div class="book-info">
+                        <h3>The Diary of a Young Girl</h3>
+                        <p class="author">Anne Frank</p>
+                        <p class="summary">The poignant account of a young Jewish girl's life in hiding during World War II.</p>
+                        <p><strong>Review/Rating:</strong> Deeply moving and insightful, Anne’s diary remains a timeless testament to courage and resilience. <strong>4.8/5 Stars</strong></p>
+                        <p class="price">R320.00</p>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!--Footer-->
+    <footer class="site-footer-main">
+        <p>&copy; 2024 Exclusive Books. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+            
+</body>
+</html>

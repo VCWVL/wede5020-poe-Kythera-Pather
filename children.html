@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Spark your child's imagination with our delightful collection of children's books, from picture books to young adult novels.">
+    <title>Children's Books | Kids' Stories & Adventures | Exclusive Books</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Pridi:wght@400;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Header-->
+    <header class="site-header">
+        <!--The code shows the logo image-->
+        <a href="index.html" class="logo-link"><img src="_images/exclusive_book_logo.jpg" alt="Exclusive Books Logo" class="logo"></a>
+        <div class="header-content">
+            <h1>Exclusive Books</h1>
+            <div class="search-bar">
+                <!--Allows the user to search up a book name-->
+                <input type="text" id="header-search-input" placeholder="Search for your books here...">
+                <button id="header-search-button">Search</button>
+            </div>
+        </div>
+        <!--Navigation to diffrent pagers in the website and are connected -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="stores.html">Stores</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Category Navigation -->
+            <!--The code helps to link the pagers to its connected and go into one pahe into the next while also displaying the categories-->
+        <nav class="category-nav">
+            <ul>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="non-fiction.html">Non-Fiction</a></li>
+                <li><a href="children.html" class="active">Children</a></li>
+                <li><a href="autobiographies.html">Autobiographies</a></li>
+                <li><a href="bookTok.html">BookTok</a></li>
+                <li><a href="religion.html">Religion</a></li>
+                <li><a href="biography.html">Biography</a></li>
+            </ul>
+        </nav>
+
+        <!--Category Banner thats labled with what section it is-->
+        <section class="page-banner">
+            <img src="_images/bookstore_banner_second.jpg" alt="A well-lit, modern bookstore interior">
+            <div class="banner-text">
+                <h2>Explore Our Children's Collection</h2>
+                <p>Delve into a world of imagination and adventure with our selection of children's books.</p>
+            </div>
+        </section>
+
+        <!--Children's Section-->
+        <section class="content-section">
+            <h2>Popular Children's Books</h2>
+            <div class="filter-bar">
+                <input type="text" id="book-filter" placeholder="Filter books by title or author...">
+            </div>
+            <div class="book-grid">
+                <div class="book-card" data-title="Where the Wild Things Are" data-author="Maurice Sendak" data-price="150.00" data-image="_images/where_the_wild_things_are_children.jpg">
+                    <img src="_images/where_the_wild_things_are_children.jpg" alt="Where the Wild Things Are">
+                    <div class="book-info">
+                        <!--Code implements the books name-->
+                        <h3>Where the Wild Things Are</h3>
+                        <!--Code implements the books author-->
+                        <p class="author">Maurice Sendak</p>
+                        <!--Code implements the books summary-->
+                        <p class="summary">Follows young Max, who sails to an island of wild creatures and learns the importance of home and love.</p>
+                        <!--Code implements the books reivew/rating-->
+                        <p><strong>Review/Rating:</strong> “A timeless classic that captures the imagination of children and adults alike.” <strong>4.8/5 Stars</strong></p>
+                        <!--Code implements the books price-->
+                        <p class="price">R150.00</p>
+                        <!--Code implements the add to cart button, which will take the user to the add to cart page-->
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="book-card" data-title="The Very Hungry Caterpillar" data-author="Eric Carle" data-price="120.00" data-image="_images/the_very_hungry_caterpilar_children.jpg">
+                    <img src="_images/the_very_hungry_caterpilar_children.jpg" alt="The Very Hungry Caterpillar">
+                    <div class="book-info">
+                        <h3>The Very Hungry Caterpillar</h3>
+                        <p class="author">Eric Carle</p>
+                        <p class="summary">A delightful story of a caterpillar's transformation into a butterfly, teaching days of the week and counting.</p>
+                        <p><strong>Review/Rating:</strong>“A beautifully illustrated book that has captivated children for generations.” <strong>4.9/5 Stars</strong></p>
+                        <p class="price">R120.00</p>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="book-card" data-title="Goodnight Moon" data-author="Margaret Wise Brown" data-price="130.00" data-image="_images/goodnight_moon_children.jpg">
+                    <img src="_images/goodnight_moon_children.jpg" alt="Goodnight Moon">
+                    <div class="book-info">
+                        <h3>Goodnight Moon</h3>
+                        <p class="author">Margaret Wise Brown</p>
+                        <p class="summary">A soothing bedtime story that bids goodnight to everything in the room, perfect for lulling children to sleep.</p>
+                        <p><strong>Review/Rating:</strong>“A bedtime favorite that has been cherished by parents and children for decades.” <strong>4.7/5 Stars</strong></p>
+                        <p class="price">R130.00</p>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="book-card" data-title="Charlotte's Web" data-author="E.B. White" data-price="180.00" data-image="_images/charlotte's_web_children.jpg">
+                    <img src="_images/charlotte's_web_children.jpg" alt="Charlotte's Web">
+                    <div class="book-info">
+                        <h3>Charlotte's Web</h3>
+                        <p class="author">E.B. White</p>
+                        <p class="summary">The heartwarming tale of a pig named Wilbur and his friendship with a clever spider named Charlotte.</p>
+                        <p><strong>Review/Rating:</strong>“A touching story about friendship, loyalty, and the cycle of life.” <strong>4.8/5 Stars</strong></p> 
+                        <p class="price">R180.00</p>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="site-footer-main">
+        <p>&copy; 2024 Exclusive Books. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

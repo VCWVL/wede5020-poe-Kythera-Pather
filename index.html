@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop the best selection of bestsellers, fiction, non-fiction, and children's books at Exclusive Books. Discover your next great read with us.">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.exclusivebooks.co.za/">
+    <meta property="og:title" content="Exclusive Books | Your Online Bookstore for Bestsellers & More">
+    <meta property="og:description" content="Shop the best selection of bestsellers, fiction, non-fiction, and children's books at Exclusive Books. Discover your next great read with us.">
+    <meta property="og:image" content="https://www.exclusivebooks.co.za/_images/bookstore_banner.jpg">
+
+    <title>Exclusive Books | Your Online Bookstore for Bestsellers & More</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Pridi:wght@400;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+
+    <!--Header-->
+    <header class="site-header">
+        <!--The code shows the logo image-->
+        <a href="index.html" class="logo-link"><img src="_images/exclusive_book_logo.jpg" alt="Exclusive Books Logo" class="logo"></a>
+        <div class="header-content">
+            <h1>Exclusive Books</h1>
+            <div class="search-bar">
+                <!--Allows the user to search up a book name-->
+                <input type="text" id="header-search-input" placeholder="Search for your books here...">
+                <button id="header-search-button">Search</button>
+            </div>
+        </div>
+        <!--Navigation to diffrent pagers in the website and are connected -->
+       <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="stores.html">Stores</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ <!--Main Section-->
+<main>
+    <!--The code helps to link the pagers to its connected and go into one pahe into the next while also displaying the categories-->
+    <nav class="category-nav">
+        <ul>
+            <li><a href="fiction.html">Fiction</a></li>
+            <li><a href="non-fiction.html">Non-Fiction</a></li>
+            <li><a href="children.html">Children</a></li>
+            <li><a href="autobiographies.html">Autobiographies</a></li>
+            <li><a href="bookTok.html">BookTok</a></li>
+            <li><a href="religion.html">Religion</a></li>
+            <li><a href="biography.html">Biography</a></li>
+        </ul>
+    </nav>
+
+    <!--Hero Section-->
+    <section class="page-banner">
+        <!--The code shows a banner image-->
+        <img src="_images/bookstore_banner.jpg" alt="A cozy bookstore aisle with warm lighting and rows of books">
+        <div class="banner-text">
+            <h2>Hey, Welcome to Exclusive Books</h2>
+            <p>Find your next read now!!!</p>
+        </div>
+    </section>
+
+<!--Bestsellers Section-->
+<section class="content-section">
+    <h2>Bestsellers</h2>
+    <div class="filter-bar">
+        <input type="text" id="book-filter" placeholder="Filter books by title or author...">
+    </div>
+    <div class="book-grid">
+        <div class="book-card" data-title="Summer Island" data-author="By Kristin Hannah" data-price="400.00" data-image="_images/summer_island_bestseller.jpg">
+            <img src="_images/summer_island_bestseller.jpg" alt="Book cover for Summer Island">
+            <div class="book-info">
+                <!--Code implements the books name-->
+                <h3>Summer Island</h3>
+                <!--Code implements the books author-->
+                <p class="author">By Kristin Hannah</p>
+                <!--Code implements the books summary-->
+                <p class="summary">A heartwarming story about family, love, and the bonds that tie us together.</p>
+                <!--Code implements the books reivew/rating-->
+                 <p><strong>Review/Rating:</strong> “A beautifully written novel that captures the essence of summer and the complexities of family relationships.” <strong>4.8/5 Stars</strong></p>
+                <!--Code implements the books price-->
+                <p class="price">R400.00</p>
+                <!--Code implements the add to cart button-->
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="book-card" data-title="The Fallen Angel" data-author="By Daniel Silva" data-price="320.00" data-image="_images/the_fallen_angel_bestseller.JPG">
+            <img src="_images/the_fallen_angel_bestseller.JPG" alt="Book cover for The Fallen Angel">
+            <div class="book-info">
+                <h3>The Fallen Angel</h3>
+                <p class="author">By Daniel Silva</p>
+                <p class="summary">A gripping thriller that delves into the world of espionage and international intrigue.</p>
+                <p><strong>Review/Rating:</strong> “A masterful blend of suspense and action that keeps readers on the edge of their seats.” <strong>4.7/5 Stars</strong></p>
+                <p class="price">R320.00</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="book-card" data-title="The Psychology of Money" data-author="By Morgan Housel" data-price="350.00" data-image="_images/the_psychology_of_money_bestseller.jpg">
+            <img src="_images/the_psychology_of_money_bestseller.jpg" alt="Book cover for The Psychology of Money">
+            <div class="book-info">
+                <h3>The Psychology of Money</h3>
+                <p class="author">By Morgan Housel</p>
+                <p class="summary">An insightful exploration of how our relationship with money shapes our lives and decisions.</p>
+                <p><strong>Review/Rating:</strong> “A thought-provoking book that challenges conventional wisdom about money and wealth.” <strong>4.6/5 Stars</strong></p>
+                <p class="price">R350.00</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="book-card" data-title="Atomic Habits" data-author="By James Clear" data-price="300.00" data-image="_images/atomic_habits_bestseller.jpg">
+            <img src="_images/atomic_habits_bestseller.jpg" alt="Book cover for Atomic Habits">
+            <div class="book-info">
+                <h3>Atomic Habits</h3>
+                <p class="author">By James Clear</p>
+                <p class="summary">A practical guide to building good habits and breaking bad ones for lasting change.</p>
+                <p><strong>Review/Rating:</strong> “An essential read for anyone looking to improve their habits and achieve their goals.” <strong>4.9/5 Stars</strong></p>
+                <p class="price">R300.00</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+    <!--Footer-->
+    <footer class="site-footer-main">
+        <p>&copy; 2024 Exclusive Books. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

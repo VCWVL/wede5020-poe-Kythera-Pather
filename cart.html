@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Review and manage the items in your shopping cart. Proceed to checkout to complete your purchase from Exclusive Books.">
+    <title>Your Shopping Cart | Exclusive Books</title>
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Pridi:wght@400;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+<body>
+  <!--Header-->
+    <header class="site-header">
+        <!--The code shows the logo image-->
+        <a href="index.html" class="logo-link"><img src="_images/exclusive_book_logo.jpg" alt="Exclusive Books Logo" class="logo"></a>
+        <div class="header-content">
+            <h1>Exclusive Books</h1>
+            <div class="search-bar">\
+                <!--Allows the user to search up a book name-->
+                <input type="text" id="header-search-input" placeholder="Search for your books here...">
+                <button id="header-search-button">Search</button>
+            </div>
+        </div>
+        <!--Navigation to diffrent pagers in the website and are connected -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="stores.html">Stores</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <main>
+  <!--Category Banner thats labled with what section it is-->
+  <section class="page-banner">
+    <img src="_images/bookstore_banner_second.jpg" alt="A well-lit, modern bookstore interior">
+    <div class="banner-text">
+        <h2>Your Shopping Cart</h2>
+        <p>Review the items in your cart before proceeding to checkout.</p>
+    </div>
+  </section>
+
+  <!--Cart Items Section-->
+  <section class="content-section">
+    <h2>Items in Your Cart</h2>
+    <!--The code creates a table to display the items in the cart-->
+    <div class="table-container">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Book Title</th>
+                    <th>Author</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Cart items will be dynamically inserted here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <div class="cart-summary">
+        <h3>Total Amount: R0.00</h3>
+        <div class="cart-actions">
+            <a href="index.html" class="btn btn-secondary">Continue Shopping</a>
+            <button id="clear-cart-btn" class="btn btn-secondary">Clear Cart</button>
+            <a href="proceedCheckout.html" class="btn" id="proceed-to-checkout-btn">Proceed to Checkout</a>
+        </div>
+    </div>
+  </section>
+  </main>
+
+  <!--Footer-->
+  <footer class="site-footer-main">
+      <p>&copy; 2024 Exclusive Books. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  
+</body>
+</html>

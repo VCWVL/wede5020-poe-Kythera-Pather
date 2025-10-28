@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find an Exclusive Books store near you. View our store locations, addresses, contact numbers, and opening hours.">
+    <title>Store Locations | Find an Exclusive Books Near You</title>
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Pridi:wght@400;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JSON-LD markup for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BookStore",
+      "name": "Exclusive Books",
+      "image": "https://www.exclusivebooks.co.za/_images/exclusive_book_logo.jpg",
+      "@id": "https://www.exclusivebooks.co.za/",
+      "url": "https://www.exclusivebooks.co.za/stores.html",
+      "telephone": "(011) 123-4567",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Book St",
+        "addressLocality": "Johannesburg",
+        "postalCode": "2000",
+        "addressCountry": "ZA"
+      },
+      "department": [
+        {
+          "@type": "BookStore",
+          "name": "Exclusive Books - Sandton City",
+          "telephone": "(011) 123-4567",
+          "address": "Sandton City Shopping Centre, 1st Floor, Shop 123, Johannesburg"
+        },
+        {
+          "@type": "BookStore",
+          "name": "Exclusive Books - V&A Waterfront",
+          "telephone": "(021) 765-4321",
+          "address": "V&A Waterfront, Shop 45, Dock Road, Cape Town"
+        },
+        {
+            "@type": "BookStore",
+            "name": "Exclusive Books - Gateway Theatre of Shopping",
+            "telephone": "(031) 987-6543",
+            "address": "Gateway Theatre of Shopping, Shop 200, Palm Boulevard, Durban"
+        },
+        {
+            "@type": "BookStore",
+            "name": "Exclusive Books - Menlyn Park",
+            "telephone": "(012) 345-6789",
+            "address": "Menlyn Park Shopping Centre, Shop 78, Aramist Avenue, Pretoria"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    
+    <!--Header-->
+    <header class="site-header">
+        <!--The code shows the logo image-->
+        <a href="index.html" class="logo-link"><img src="_images/exclusive_book_logo.jpg" alt="Exclusive Books Logo" class="logo"></a>
+        <div class="header-content">
+            <h1>Exclusive Books</h1>
+            <div class="search-bar">
+                <!--Allows the user to search up a book name-->
+                <input type="text" id="header-search-input" placeholder="Search for your books here...">
+                <button id="header-search-button">Search</button>
+            </div>
+        </div>
+        <!--Navigation to diffrent pagers in the website and are connected -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="stores.html">Stores</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <!--Category Banner thats labled with what section it is-->
+    <section class="page-banner">
+        <img src="_images/bookstore_banner.jpg" alt="A cozy bookstore aisle with warm lighting and rows of books">
+        <div class="banner-text">
+            <h2>Welcome to Our Stores</h2>
+            <p>Discover our physical store locations and find out more about our services and store hours.</p>
+        </div>
+    </section>
+
+    <!--Store Locations Section in a table form-->
+    <section class="content-section">
+        <h2>Find a Store Near You</h2>
+        <p>We have multiple store locations across the country. Find the one closest to you!</p>
+        <!--The code creates a table to display the store locations-->
+        <div class="table-container">
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Store Name</th>
+                        <th>Address</th>
+                        <th>City</th>
+                        <th>Contact Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Exclusive Books - Sandton City</td>
+                        <td>Sandton City Shopping Centre, 1st Floor, Shop 123</td>
+                        <td>Johannesburg</td>
+                        <td>(011) 123-4567</td>
+                    </tr>
+                    <tr>
+                        <td>Exclusive Books - V&A Waterfront</td>
+                        <td>V&A Waterfront, Shop 45, Dock Road</td>
+                        <td>Cape Town</td>
+                        <td>(021) 765-4321</td>
+                    </tr>
+                    <tr>
+                        <td>Exclusive Books - Gateway Theatre of Shopping</td>
+                        <td>Gateway Theatre of Shopping, Shop 200, Palm Boulevard</td>
+                        <td>Durban</td>
+                        <td>(031) 987-6543</td>
+                    </tr>
+                    <tr>
+                        <td>Exclusive Books - Menlyn Park</td>
+                        <td>Menlyn Park Shopping Centre, Shop 78, Aramist Avenue</td>
+                        <td>Pretoria</td>
+                        <td>(012) 345-6789</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!--Map Section-->
+    <!--The code implements a map to show the location of the store-->
+    <section class="content-section">
+        <h2>Our Location</h2>
+        <p>Visit us at our head office or any of our store locations.</p>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.1234567890123!2d18.423300315210123!3d-33.92583998065432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc4c8b1234567%3A0xabcdef1234567890!2sExclusive%2sBooks%20Head%20Office!5e0!3m2!1sen!2sza!4v1600000000000!5m2!1sen!2sza" title="Google Map of Exclusive Books Head Office" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    
+    <!--Store Hours Section-->
+    <!--The code gives information about the store hours-->
+    <section class="content-section">
+        <h2>Store Hours</h2>
+        <p>Our stores are open during the following hours:</p>
+        <ul>
+            <li><strong>Monday - Friday:</strong> 9:00 AM - 8:00 PM</li>
+            <li><strong>Saturday:</strong> 10: 00 AM - 6:00 PM</li>
+            <li><strong>Sunday:</strong> 11:00 AM - 5:00 PM</li>
+        </ul>   
+        <p>Note: Store hours may vary during public holidays. Please check with your local store for holiday hours.</p>
+    </section>
+    </main>
+    
+    <!--Footer-->
+    <footer class="site-footer-main">
+        <p>&copy; 2024 Exclusive Books. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

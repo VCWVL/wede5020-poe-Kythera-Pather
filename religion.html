@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover books on various religious beliefs, practices, and philosophies from our curated religion collection.">
+    <title>Religion Books | Spiritual & Philosophical Texts | Exclusive Books</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Pridi:wght@400;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Header-->
+    <header class="site-header">
+        <!--The code shows the logo image-->
+        <a href="index.html" class="logo-link"><img src="_images/exclusive_book_logo.jpg" alt="Exclusive Books Logo" class="logo"></a>
+        <div class="header-content">
+            <h1>Exclusive Books</h1>
+            <div class="search-bar">
+                <!--Allows the user to search up a book name-->
+                <input type="text" id="header-search-input" placeholder="Search for your books here...">
+                <button id="header-search-button">Search</button>
+            </div>
+        </div>
+        <!--Navigation to diffrent pagers in the website and are connected -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="stores.html">Stores</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Category Navigation -->
+        <nav class="category-nav">
+            <ul>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="non-fiction.html">Non-Fiction</a></li>
+                <li><a href="children.html">Children</a></li>
+                <li><a href="autobiographies.html">Autobiographies</a></li>
+                <li><a href="bookTok.html">BookTok</a></li>
+                <li><a href="religion.html" class="active">Religion</a></li>
+                <li><a href="biography.html">Biography</a></li>
+            </ul>
+        </nav>
+
+        <!--Category Banner-->
+        <section class="page-banner">
+            <img src="_images/bookstore_banner.jpg" alt="A cozy bookstore aisle with warm lighting and rows of books">
+            <div class="banner-text">
+                <h2>Explore Our Religion Collection</h2>
+                <p>Discover books on various religious beliefs, practices, and philosophies.</p>
+            </div>
+        </section>
+
+        <!--Religion Section-->
+        <section class="content-section">
+            <h2>Popular Religion Books</h2>
+            <div class="filter-bar">
+                <input type="text" id="book-filter" placeholder="Filter books by title or author...">
+            </div>
+            <div class="book-grid">
+                <div class="book-card" data-title="Bhagavad Gita" data-author="Eknath Easwaran" data-price="200.00" data-image="_images/the_bhagvad_gita_religion.jpg">
+                    <img src="_images/the_bhagvad_gita_religion.jpg" alt="Bhagavad Gita">
+                    <div class="book-info">
+                        <!--Code implements the books name-->
+                        <h3>Bhagavad Gita</h3>
+                        <!--Code implements the books author-->
+                        <p class="author">Eknath Easwaran</p>
+                        <!--Code implements the books summary-->
+                        <p class="summary">A Hindu scripture presenting a conversation between Prince Arjuna and Krishna on duty and devotion.</p>
+                        <!--Code implements the books reivew/rating-->
+                        <p><strong>Review/Rating:</strong> “A profound spiritual text that offers timeless wisdom and guidance.” <strong>4.7/5 Stars</strong></p>
+                        <!--Code implements the books price-->
+                        <p class="price">R200.00</p>
+                        <!--Code implements the add to cart button, which will take the user to the add to cart page-->
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="book-card" data-title="Quran" data-author="Muhammad Asad" data-price="250.00" data-image="_images/quran_religion.jpg">
+                    <img src="_images/quran_religion.jpg" alt="Quran">
+                    <div class="book-info">
+                        <h3>Quran</h3>
+                        <p class="author">Muhammad Asad</p>
+                        <p class="summary">The holy book of Islam, providing guidance on faith, morality, and law.</p>
+                         <p><strong>Review/Rating:</strong>"A beautifully translated text that captures the essence of Islamic teachings." <strong>4.6/5 Stars</strong></p> 
+                        <p class="price">R250.00</p>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="book-card" data-title="The Bible" data-author="Various Authors" data-price="300.00" data-image="_images/the_bible_religion.jpg">
+                    <img src="_images/the_bible_religion.jpg" alt="The Bible">
+                    <div class="book-info">
+                        <h3>The Bible</h3>
+                        <p class="author">Various Authors</p>
+                        <p class="summary">A collection of sacred texts in Christianity, offering spiritual guidance and moral teachings.</p>
+                        <p><strong>Review/Rating:</strong>"A foundational text for Christians worldwide, rich in history and spiritual insight." <strong>4.8/5 Stars</strong></p>
+                        <p class="price">R300.00</p>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="book-card" data-title="Tao Te Ching" data-author="Lao Tzu" data-price="180.00" data-image="_images/tao_te_ching_religion.jpg">
+                    <img src="_images/tao_te_ching_religion.jpg" alt="Tao Te Ching">
+                    <div class="book-info">
+                        <h3>Tao Te Ching</h3>
+                        <p class="author">Lao Tzu</p>
+                        <p class="summary">A classic Chinese text offering insights on living in harmony with the Tao (the Way).</p>
+                        <p><strong>Review/Rating:</strong>"A timeless work that provides profound wisdom on balance and inner peace." <strong>4.5/5 Stars</strong></p>  
+                        <p class="price">R180.00</p>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="site-footer-main">
+        <p>&copy; 2024 Exclusive Books. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

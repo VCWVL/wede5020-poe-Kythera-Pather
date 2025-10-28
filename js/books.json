@@ -1,0 +1,272 @@
+[
+    {
+        "title": "Summer Island",
+        "author": "By Kristin Hannah",
+        "summary": "A heartwarming story about family, love, and the bonds that tie us together.",
+        "review": "“A beautifully written novel that captures the essence of summer and the complexities of family relationships.” 4.8/5 Stars",
+        "price": "R400.00",
+        "image": "_images/summer_island_bestseller.jpg",
+        "category": "Bestseller"
+    },
+    {
+        "title": "The Fallen Angel",
+        "author": "By Daniel Silva",
+        "summary": "A gripping thriller that delves into the world of espionage and international intrigue.",
+        "review": "“A masterful blend of suspense and action that keeps readers on the edge of their seats.” 4.7/5 Stars",
+        "price": "R320.00",
+        "image": "_images/the_fallen_angel_bestseller.JPG",
+        "category": "Bestseller"
+    },
+    {
+        "title": "The Psychology of Money",
+        "author": "By Morgan Housel",
+        "summary": "An insightful exploration of how our relationship with money shapes our lives and decisions.",
+        "review": "“A thought-provoking book that challenges conventional wisdom about money and wealth.” 4.6/5 Stars",
+        "price": "R350.00",
+        "image": "_images/the_psychology_of_money_bestseller.jpg",
+        "category": "Bestseller"
+    },
+    {
+        "title": "Atomic Habits",
+        "author": "By James Clear",
+        "summary": "A practical guide to building good habits and breaking bad ones for lasting change.",
+        "review": "“An essential read for anyone looking to improve their habits and achieve their goals.” 4.9/5 Stars",
+        "price": "R300.00",
+        "image": "_images/atomic_habits_bestseller.jpg",
+        "category": "Bestseller"
+    },
+    {
+        "title": "Einstein: His Life and Universe",
+        "author": "Walter Isaacson",
+        "summary": "A comprehensive biography of Albert Einstein, exploring his scientific achievements and personal life.",
+        "review": "“A detailed and engaging portrayal of one of history’s greatest minds.” 4.6/5 Stars",
+        "price": "R450.00",
+        "image": "_images/einstein_his_life_and_universe_biography.jpg",
+        "category": "Biography"
+    },
+    {
+        "title": "Napoleon: A Concise Biography",
+        "author": "David A. Bell",
+        "summary": "A concise biography of Napoleon Bonaparte, detailing his rise to power and military campaigns.",
+        "review": "“A well-written and accessible overview of a complex historical figure.” 4.3/5 Stars",
+        "price": "R299.00",
+        "image": "_images/napoleon_concise_biography.jpg",
+        "category": "Biography"
+    },
+    {
+        "title": "Elon Musk",
+        "author": "Walter Isaacson",
+        "summary": "Chronicles the life of the visionary entrepreneur behind Tesla, SpaceX, and other ventures.",
+        "review": "\"An insightful look into the mind of a modern innovator.\" 4.5/5 Stars",
+        "price": "R500.00",
+        "image": "_images/elon_musk_biography.jpg",
+        "category": "Biography"
+    },
+    {
+        "title": "Biography: An Historiography",
+        "author": "Melanie Nolan",
+        "summary": "Explores the evolution of biographical writing and its significance in understanding history.",
+        "review": "\"A fascinating exploration of the art and craft of biography.\" 4.4/5 Stars",
+        "price": "R350.00",
+        "image": "_images/biography_an_historiography.jpg",
+        "category": "Biography"
+    },
+    {
+        "title": "Where the Wild Things Are",
+        "author": "Maurice Sendak",
+        "summary": "Follows young Max, who sails to an island of wild creatures and learns the importance of home and love.",
+        "review": "“A timeless classic that captures the imagination of children and adults alike.” 4.8/5 Stars",
+        "price": "R150.00",
+        "image": "_images/where_the_wild_things_are_children.jpg",
+        "category": "Children"
+    },
+    {
+        "title": "The Very Hungry Caterpillar",
+        "author": "Eric Carle",
+        "summary": "A delightful story of a caterpillar's transformation into a butterfly, teaching days of the week and counting.",
+        "review": "“A beautifully illustrated book that has captivated children for generations.” 4.9/5 Stars",
+        "price": "R120.00",
+        "image": "_images/the_very_hungry_caterpilar_children.jpg",
+        "category": "Children"
+    },
+    {
+        "title": "Goodnight Moon",
+        "author": "Margaret Wise Brown",
+        "summary": "A soothing bedtime story that bids goodnight to everything in the room, perfect for lulling children to sleep.",
+        "review": "“A bedtime favorite that has been cherished by parents and children for decades.” 4.7/5 Stars",
+        "price": "R130.00",
+        "image": "_images/goodnight_moon_children.jpg",
+        "category": "Children"
+    },
+    {
+        "title": "Charlotte's Web",
+        "author": "E.B. White",
+        "summary": "The heartwarming tale of a pig named Wilbur and his friendship with a clever spider named Charlotte.",
+        "review": "“A touching story about friendship, loyalty, and the cycle of life.” 4.8/5 Stars",
+        "price": "R180.00",
+        "image": "_images/charlotte's_web_children.jpg",
+        "category": "Children"
+    },
+    {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "summary": "A classic novel about wealth, love, and the American Dream set in the Roaring Twenties.",
+        "review": "“A timeless masterpiece that captures the fragility of dreams.” 4,5/5 Stars",
+        "price": "R250.00",
+        "image": "_images/the_great_gatsby_fiction.jpg",
+        "category": "Fiction"
+    },
+    {
+        "title": "The lost bookshop",
+        "author": "Evie Woods",
+        "summary": "A magical story about three lives connected by a hidden bookshop.",
+        "review": "“A charming and whimsical tale that celebrates the love of books.” 4,1/5 Stars",
+        "price": "R360.00",
+        "image": "_images/the_lost_bookshop_fiction.jpg",
+        "category": "Fiction"
+    },
+    {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "summary": "A powerful novel about justice, race, and childhood in the American South.",
+        "review": "“Heartbreaking and inspiring with a message that still resonates.” 4,3",
+        "price": "R280.00",
+        "image": "_images/how_to_kill_a_mockingbird_fiction.jpg",
+        "category": "Fiction"
+    },
+    {
+        "title": "The Midnight Library",
+        "author": "Matt Haig",
+        "summary": "A thought-provoking novel about choices, regrets, and the infinite possibilities of life.",
+        "review": "“A beautifully written exploration of life’s choices and their impact.” 4,7/5 Stars",
+        "price": "R300.00",
+        "image": "_images/the_midnight_library_fiction.jpg",
+        "category": "Fiction"
+    },
+    {
+        "title": "Humankind",
+        "author": "Rutger Bregman",
+        "summary": "A compelling argument that humans, at their core, are naturally kind and cooperative—even in adversity.",
+        "review": "\"An uplifting, well-researched reminder of our potential for empathy—refreshing and inspiring in cynical times.\" 4/5 Stars",
+        "price": "R370.00",
+        "image": "_images/humankind_non_fiction.jpg",
+        "category": "Non-Fiction"
+    },
+    {
+        "title": "All the light we cannot see",
+        "author": "Anthony Doerr",
+        "summary": "A beautifully woven tale of a blind French girl and a German boy whose paths collide in occupied France during World War II.",
+        "review": "\"A moving, lyrical story that illuminates the power of hope and resilience in the darkest times.\" 4,7/5 Stars",
+        "price": "R350.00",
+        "image": "_images/all_the_light_we_cannot_see_non_fiction.jpg",
+        "category": "Non-Fiction"
+    },
+    {
+        "title": "The Hitchhiker's Guide to AI",
+        "author": "Arthur Goldstuck",
+        "summary": "Explores how AI is shaping Africa and how Africans are innovating with it.",
+        "review": "\"Goldstuck makes AI easy to understand with relatable examples, showing Africa’s unique role in the tech world.\" 4,5/5 Stars",
+        "price": "R360.00",
+        "image": "_images/the_hitchhiker's_guide_to_ai_non_fiction.jpg",
+        "category": "Non-Fiction"
+    },
+    {
+        "title": "Surrounded by idiots",
+        "author": "Thomas Erikson",
+        "summary": "A practical guide to understanding different personality types and improving communication.",
+        "review": "\"A fascinating read that offers valuable insights into human behavior and interaction.\" 4,2/5 Stars",
+        "price": "R300.00",
+        "image": "_images/surrounded_by_idiots_non_fiction.jpg",
+        "category": "Non-Fiction"
+    },
+    {
+        "title": "Becoming",
+        "author": "Michelle Obama",
+        "summary": "The inspiring and intimate memoir of the former First Lady of the United States.",
+        "review": "“Inspiring and practical, it offers timeless wisdom on discipline, ambition, and the pursuit of success.” 4.9/5 Stars",
+        "price": "R375.00",
+        "image": "_images/becoming_autobiography.jpg",
+        "category": "Autobiographies"
+    },
+    {
+        "title": "I Am Malala",
+        "author": "Malala Yousafzai",
+        "summary": "The powerful memoir of the young activist who stood up for education and survived an attack by the Taliban.",
+        "review": "Courageous and inspiring, Malala’s story is a testament to the importance of education and the strength of the human spirit. 4.7/5 Stars",
+        "price": "R350.00",
+        "image": "_images/i_am_malala_autobiography.jpg",
+        "category": "Autobiographies"
+    },
+    {
+        "title": "Long Walk to Freedom",
+        "author": "Nelson Mandela",
+        "summary": "The autobiography of Nelson Mandela, chronicling his life and fight against apartheid in South Africa.",
+        "review": "Powerful and moving, Mandela’s story is a testament to resilience, justice, and the fight for equality. 5/5 Stars",
+        "price": "R400.00",
+        "image": "_images/long_walk_to_freedom_autobiography.jpg",
+        "category": "Autobiographies"
+    },
+    {
+        "title": "The Diary of a Young Girl",
+        "author": "Anne Frank",
+        "summary": "The poignant account of a young Jewish girl's life in hiding during World War II.",
+        "review": "Deeply moving and insightful, Anne’s diary remains a timeless testament to courage and resilience. 4.8/5 Stars",
+        "price": "R320.00",
+        "image": "_images/the_diary_of_a_young_girl_autobiography.jpg",
+        "category": "Autobiographies"
+    },
+    {
+        "title": "Once Upon a Broken Heart",
+        "author": "Stephanie Garber",
+        "summary": "A captivating fantasy about a deal with the Prince of Hearts, filled with magic and adventure.",
+        "review": "“Enchanting and beautifully written, this book will sweep you off your feet.” 4.8/5 Stars",
+        "price": "R320.00",
+        "image": "_images/once_upon_a_broken_heart_booktok.jpg",
+        "category": "BookTok"
+    },
+    {
+        "title": "The Love Hypothesis",
+        "author": "Ali Hazelwood",
+        "summary": "A charming rom-com about a PhD student who fakes a relationship with a professor.",
+        "review": "“A delightful and witty read that captures the essence of academic life and romance.” 4.7/5 Stars",
+        "price": "R300.00",
+        "image": "_images/the_love_hypothesis_booktok.jpg",
+        "category": "BookTok"
+    },
+    {
+        "title": "Shatter Me",
+        "author": "Tahereh Mafi",
+        "summary": "A dystopian novel about a girl with a lethal touch who finds hope and love in an unexpected ally.",
+        "review": "“A gripping tale of survival, love, and the fight for freedom that will keep you on the edge of your seat.” 4.6/5 Stars",
+        "price": "R280.00",
+        "image": "_images/shatter_me_booktok.jpg",
+        "category": "BookTok"
+    },
+    {
+        "title": "The Cruel Prince",
+        "author": "Holly Black",
+        "summary": "A dark fantasy about a mortal girl navigating the treacherous politics of the Faerie Court.",
+        "review": "“Intricate, thrilling, and full of twists—an unforgettable journey into the world of faeries.” 4.7/5 Stars",
+        "price": "R310.00",
+        "image": "_images/the_cruel_prince_booktok.jpg",
+        "category": "BookTok"
+    },
+    {
+        "title": "Bhagavad Gita",
+        "author": "Eknath Easwaran",
+        "summary": "A Hindu scripture presenting a conversation between Prince Arjuna and Krishna on duty and devotion.",
+        "review": "“A profound spiritual text that offers timeless wisdom and guidance.” 4.7/5 Stars",
+        "price": "R200.00",
+        "image": "_images/the_bhagvad_gita_religion.jpg",
+        "category": "Religion"
+    },
+    {
+        "title": "The Bible",
+        "author": "Various Authors",
+        "summary": "A collection of sacred texts in Christianity, offering spiritual guidance and moral teachings.",
+        "review": "\"A foundational text for Christians worldwide, rich in history and spiritual insight.\" 4.8/5 Stars",
+        "price": "R300.00",
+        "image": "_images/the_bible_religion.jpg",
+        "category": "Religion"
+    }
+]
