@@ -7,18 +7,14 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- 1. Accordion for About Us Page ---
-    const aboutBlocks = document.querySelectorAll('.about-block');
-    if (aboutBlocks.length > 0) {
-        aboutBlocks.forEach((block, index) => {
-            const header = block.querySelector('h3');
-            const content = block.querySelectorAll('p, .team-grid');
+    const faqItems = document.querySelectorAll('.faq-item');
+    if (faqItems.length > 0) {
+        faqItems.forEach(item => {
+            const header = item.querySelector('h3');
+            const content = item.querySelector('p');
 
-            // Hide all content sections except the first one
-            if (index > 0) {
-                content.forEach(c => c.style.display = 'none');
-            } else {
-                header.classList.add('active'); // Mark the first one as active
-            }
+            // Hide all content sections by default
+            content.style.display = 'none';
 
             header.style.cursor = 'pointer';
             header.addEventListener('click', () => {
@@ -26,9 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 header.classList.toggle('active');
 
                 // Toggle display of content
-                content.forEach(c => {
-                    c.style.display = c.style.display === 'none' ? 'block' : 'none';
-                });
+                content.style.display = content.style.display === 'none' ? 'block' : 'none';
             });
         });
     }

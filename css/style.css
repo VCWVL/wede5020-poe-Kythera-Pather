@@ -633,19 +633,24 @@ p {
 }
 
 /* Accordion (About Page) */
-.about-block h3 {
+.faq-item h3 {
     transition: background-color 0.3s, color 0.3s;
     padding: 0.5rem;
     border-radius: 4px;
     cursor: pointer;
 }
 
-.about-block h3:hover {
+.faq-item h3:hover {
     background-color: #dde2f1;
     color: #072645;
 }
-.about-block h3.active {
+.faq-item h3.active {
     background-color: #e3e7fd;
+}
+
+/* Add some spacing between FAQ items */
+.faq-item {
+    margin-bottom: 1rem;
 }
 
 /* Lightbox Modal for Images */
