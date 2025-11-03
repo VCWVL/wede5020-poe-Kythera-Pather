@@ -6,6 +6,155 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    // --- Book Data ---
+    // This data is embedded directly to avoid local file loading issues (CORS).
+    const allBooksData = [
+        {
+            "title": "Summer Island",
+            "author": "Kristin Hannah",
+            "summary": "A heartwarming story about family, love, and the bonds that tie us together.",
+            "review": "“A beautifully written novel that captures the essence of summer and the complexities of family relationships.” <strong>4.8/5 Stars</strong>",
+            "price": "R400.00",
+            "image": "_images/summer_island_bestseller.jpg"
+        },
+        {
+            "title": "The Fallen Angel",
+            "author": "Daniel Silva",
+            "summary": "A gripping thriller that delves into the world of espionage and international intrigue.",
+            "review": "“A masterful blend of suspense and action that keeps readers on the edge of their seats.” <strong>4.7/5 Stars</strong>",
+            "price": "R320.00",
+            "image": "_images/the_fallen_angel_bestseller.JPG"
+        },
+        {
+            "title": "The Psychology of Money",
+            "author": "Morgan Housel",
+            "summary": "An insightful exploration of how our relationship with money shapes our lives and decisions.",
+            "review": "“A thought-provoking book that challenges conventional wisdom about money and wealth.” <strong>4.6/5 Stars</strong>",
+            "price": "R350.00",
+            "image": "_images/the_psychology_of_money_bestseller.jpg"
+        },
+        {
+            "title": "Atomic Habits",
+            "author": "James Clear",
+            "summary": "A practical guide to building good habits and breaking bad ones for lasting change.",
+            "review": "“An essential read for anyone looking to improve their habits and achieve their goals.” <strong>4.9/5 Stars</strong>",
+            "price": "R300.00",
+            "image": "_images/atomic_habits_bestseller.jpg"
+        },
+        {
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "summary": "A classic novel about the American Dream, wealth, and love during the Roaring Twenties.",
+            "review": "“A timeless masterpiece that captures the glamour and disillusionment of an era.” <strong>4.5/5 Stars</strong>",
+            "price": "R250.00",
+            "image": "_images/the_great_gatsby_fiction.jpg"
+        },
+        {
+            "title": "The lost bookshop",
+            "author": "Evie Woods",
+            "summary": "A magical story about a hidden bookshop and the secrets it holds.",
+            "review": "“A charming and enchanting read for anyone who loves books and a touch of mystery.” <strong>4.6/5 Stars</strong>",
+            "price": "R360.00",
+            "image": "_images/the_lost_bookshop_fiction.jpg"
+        },
+        {
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "summary": "A powerful story of justice and racial inequality in the American South.",
+            "review": "“A profound and moving novel that remains as relevant today as it was when first published.” <strong>4.8/5 Stars</strong>",
+            "price": "R280.00",
+            "image": "_images/how_to_kill_a_mockingbird_fiction.jpg"
+        },
+        {
+            "title": "The Midnight Library",
+            "author": "Matt Haig",
+            "summary": "A novel about the choices that go into a life well-lived and the power of second chances.",
+            "review": "“A beautifully written and imaginative story that will make you reflect on your own life.” <strong>4.7/5 Stars</strong>",
+            "price": "R300.00",
+            "image": "_images/the_midnight_library_fiction.jpg"
+        },
+        {
+            "title": "Humankind",
+            "author": "Rutger Bregman",
+            "summary": "A compelling argument that humans, at their core, are naturally kind and cooperative—even in adversity.",
+            "review": "“An uplifting, well-researched reminder of our potential for empathy—refreshing and inspiring in cynical times.” <strong>4/5 Stars</strong>",
+            "price": "R370.00",
+            "image": "_images/humankind_non_fiction.jpg"
+        },
+        {
+            "title": "All the light we cannot see",
+            "author": "Anthony Doerr",
+            "summary": "A beautifully woven tale of a blind French girl and a German boy whose paths collide in occupied France during World War II.",
+            "review": "“A moving, lyrical story that illuminates the power of hope and resilience in the darkest times.” <strong>4.7/5 Stars</strong>",
+            "price": "R350.00",
+            "image": "_images/all_the_light_we_cannot_see_non_fiction.jpg"
+        },
+        {
+            "title": "The Hitchhiker's Guide to AI",
+            "author": "Arthur Goldstuck",
+            "summary": "Explores how AI is shaping Africa and how Africans are innovating with it.",
+            "review": "“Goldstuck makes AI easy to understand with relatable examples, showing Africa’s unique role in the tech world.” <strong>4.5/5 Stars</strong>",
+            "price": "R360.00",
+            "image": "_images/the_hitchhiker's_guide_to_ai_non_fiction.jpg"
+        },
+        {
+            "title": "Surrounded by idiots",
+            "author": "Thomas Erikson",
+            "summary": "A practical guide to understanding different personality types and improving communication.",
+            "review": "“A fascinating read that offers valuable insights into human behavior and interaction.” <strong>4.2/5 Stars</strong>",
+            "price": "R300.00",
+            "image": "_images/surrounded_by_idiots_non_fiction.jpg"
+        },
+        {
+            "title": "Where the Wild Things Are",
+            "author": "Maurice Sendak",
+            "summary": "A classic children's story about a young boy named Max who sails away to an island inhabited by Wild Things.",
+            "review": "“A timeless adventure that celebrates imagination and the comfort of home.” <strong>4.9/5 Stars</strong>",
+            "price": "R150.00",
+            "image": "_images/where_the_wild_things_are_children.jpg"
+        },
+        {
+            "title": "The Very Hungry Caterpillar",
+            "author": "Eric Carle",
+            "summary": "A beloved picture book that follows a caterpillar as it eats its way through a wide variety of foods.",
+            "review": "“A beautifully illustrated and educational story that has captivated children for generations.” <strong>5/5 Stars</strong>",
+            "price": "R120.00",
+            "image": "_images/the_very_hungry_caterpilar_children.jpg"
+        },
+        {
+            "title": "Goodnight Moon",
+            "author": "Margaret Wise Brown",
+            "summary": "A quiet and soothing bedtime story where a little bunny says goodnight to everything in its room.",
+            "review": "“The perfect book to help little ones wind down and prepare for sleep.” <strong>4.8/5 Stars</strong>",
+            "price": "R130.00",
+            "image": "_images/goodnight_moon_children.jpg"
+        },
+        {
+            "title": "Charlotte's Web",
+            "author": "E.B. White",
+            "summary": "A heartwarming tale of friendship between a pig named Wilbur and a spider named Charlotte.",
+            "review": "“A beautiful story about friendship, life, and death that will stay with you long after you finish it.” <strong>4.9/5 Stars</strong>",
+            "price": "R180.00",
+            "image": "_images/charlotte's_web_children.jpg"
+        },
+        { "title": "Becoming", "author": "Michelle Obama", "summary": "An intimate, powerful, and inspiring memoir by the former First Lady of the United States.", "review": "“A deeply personal and reflective memoir that offers a unique window into the life of a remarkable woman.” <strong>4.9/5 Stars</strong>", "price": "R375.00", "image": "_images/becoming_autobiography.jpg" },
+        { "title": "I Am Malala", "author": "Malala Yousafzai", "summary": "The remarkable story of a young girl who stood up for education and was shot by the Taliban.", "review": "“An incredibly brave and inspiring story that will move you to tears and fill you with hope.” <strong>4.8/5 Stars</strong>", "price": "R350.00", "image": "_images/i_am_malala_autobiography.jpg" },
+        { "title": "Long Walk to Freedom", "author": "Nelson Mandela", "summary": "The autobiography of Nelson Mandela, a global icon and one of the most influential leaders of our time.", "review": "“A powerful and moving account of a life dedicated to the fight for freedom and justice.” <strong>5/5 Stars</strong>", "price": "R400.00", "image": "_images/long_walk_to_freedom_autobiography.jpg" },
+        { "title": "The Diary of a Young Girl", "author": "Anne Frank", "summary": "The diary of a young Jewish girl who hid with her family during the Nazi occupation of the Netherlands.", "review": "“A poignant and powerful testament to the human spirit in the face of unimaginable adversity.” <strong>4.9/5 Stars</strong>", "price": "R320.00", "image": "_images/the_diary_of_a_young_girl_autobiography.jpg" },
+        { "title": "Once Upon a Broken Heart", "author": "Stephanie Garber", "summary": "A whimsical and romantic fantasy about a girl who believes in true love and a prince who can't be trusted.", "review": "“A magical and enchanting story that will sweep you off your feet.” <strong>4.7/5 Stars</strong>", "price": "R320.00", "image": "_images/once_upon_a_broken_heart_booktok.jpg" },
+        { "title": "The Love Hypothesis", "author": "Ali Hazelwood", "summary": "A fake relationship between two scientists leads to unexpected and hilarious consequences.", "review": "“A smart, funny, and swoon-worthy romance that will have you rooting for the main characters.” <strong>4.6/5 Stars</strong>", "price": "R300.00", "image": "_images/the_love_hypothesis_booktok.jpg" },
+        { "title": "Shatter Me", "author": "Tahereh Mafi", "summary": "A thrilling dystopian novel about a girl with a lethal touch and the two boys who want to use her as a weapon.", "review": "“A captivating and action-packed story with a unique and compelling protagonist.” <strong>4.5/5 Stars</strong>", "price": "R280.00", "image": "_images/shatter_me_booktok.jpg" },
+        { "title": "The Cruel Prince", "author": "Holly Black", "summary": "A mortal girl gets caught in a web of intrigue and danger in the High Court of Faerie.", "review": "“A dark and enchanting fantasy with a fierce and unforgettable heroine.” <strong>4.8/5 Stars</strong>", "price": "R310.00", "image": "_images/the_cruel_prince_booktok.jpg" },
+        { "title": "Bhagavad Gita", "author": "Eknath Easwaran", "summary": "An ancient Indian scripture that offers profound insights into the nature of reality and the path to spiritual enlightenment.", "review": "“A timeless classic that continues to inspire and guide readers on their spiritual journey.” <strong>4.9/5 Stars</strong>", "price": "R200.00", "image": "_images/the_bhagvad_gita_religion.jpg" },
+        { "title": "Quran", "author": "Muhammad Asad", "summary": "The central religious text of Islam, believed by Muslims to be a revelation from God.", "review": "“A sacred text that offers guidance, wisdom, and inspiration to millions of people around the world.” <strong>5/5 Stars</strong>", "price": "R250.00", "image": "_images/quran_religion.jpg" },
+        { "title": "The Bible", "author": "Various Authors", "summary": "A collection of sacred texts or scriptures that are central to Judaism and Christianity.", "review": "“A foundational text that has shaped the course of history and continues to be a source of inspiration and guidance.” <strong>5/5 Stars</strong>", "price": "R300.00", "image": "_images/the_bible_religion.jpg" },
+        { "title": "Tao Te Ching", "author": "Lao Tzu", "summary": "A classic Chinese text that offers profound wisdom on the art of living in harmony with the Tao.", "review": "“A timeless masterpiece that offers a path to inner peace and a deeper understanding of the universe.” <strong>4.8/5 Stars</strong>", "price": "R180.00", "image": "_images/tao_te_ching_religion.jpg" },
+        { "title": "Einstein: His Life and Universe", "author": "Walter Isaacson", "summary": "A comprehensive biography of Albert Einstein, exploring his scientific achievements and personal life.", "review": "“A detailed and engaging portrayal of one of history’s greatest minds.” <strong>4.6/5 Stars</strong>", "price": "R450.00", "image": "_images/einstein_his_life_and_universe_biography.jpg" },
+        { "title": "Napoleon: A Concise Biography", "author": "David A. Bell", "summary": "A concise biography of Napoleon Bonaparte, detailing his rise to power and military campaigns.", "review": "“A well-written and accessible overview of a complex historical figure.” <strong>4.3/5 Stars</strong>", "price": "R299.00", "image": "_images/napoleon_concise_biography.jpg" },
+        { "title": "Elon Musk", "author": "Walter Isaacson", "summary": "Chronicles the life of the visionary entrepreneur behind Tesla, SpaceX, and other ventures.", "review": "“An insightful look into the mind of a modern innovator.” <strong>4.5/5 Stars</strong>", "price": "R500.00", "image": "_images/elon_musk_biography.jpg" },
+        { "title": "Biography: An Historiography", "author": "Melanie Nolan", "summary": "Explores the evolution of biographical writing and its significance in understanding history.", "review": "“A fascinating exploration of the art and craft of biography.” <strong>4.4/5 Stars</strong>", "price": "R350.00", "image": "_images/biography_an_historiography.jpg" }
+    ];
+
     // --- 1. Accordion for About Us Page ---
     const faqItems = document.querySelectorAll('.faq-item');
     if (faqItems.length > 0) {
@@ -153,43 +302,10 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const currentPage = window.location.pathname;
-
-        // Check if current page is an events page
-        if (currentPage.endsWith('events.html')) {
-            // If on events page, apply local filter and pre-fill local input
-            const eventFilterInput = document.getElementById('event-filter');
-            const eventsGrid = document.querySelector('.events-grid');
-            const noResultsMessage = createNoResultsMessage(eventsGrid.parentElement);
-
-            if (eventFilterInput) {
-                eventFilterInput.value = query; // Pre-fill local filter
-            }
-            applyLocalFilter(query.toLowerCase(), '.events-grid', '.event-card', ['h3', 'p:nth-of-type(3)'], noResultsMessage);
-
-        } else if (currentPage.endsWith('index.html') ||
-                   currentPage.endsWith('fiction.html') ||
-                   currentPage.endsWith('non-fiction.html') ||
-                   currentPage.endsWith('children.html') ||
-                   currentPage.endsWith('autobiographies.html') ||
-                   currentPage.endsWith('bookTok.html') ||
-                   currentPage.endsWith('religion.html') ||
-                   currentPage.endsWith('biography.html') ||
-                   currentPage === '/') { // Handle root path for index.html
-            // If on a book category page or index, apply local filter and pre-fill local input
-            const bookFilterInput = document.getElementById('book-filter');
-            const bookGrid = document.querySelector('.book-grid');
-            const noResultsMessage = createNoResultsMessage(bookGrid.parentElement);
-
-            if (bookFilterInput) {
-                bookFilterInput.value = query; // Pre-fill local filter
-            }
-            applyLocalFilter(query.toLowerCase(), '.book-grid', '.book-card', ['h3', '.author'], noResultsMessage);
-
-        } else {
-            // For all other pages, redirect to the global search.html
-            window.location.href = `search.html?q=${encodeURIComponent(query)}`;
-        }
+        // Always redirect to the global search page for a consistent user experience.
+        // This ensures that a search for a book or event will search the entire site,
+        // regardless of the page the user is currently on.
+        window.location.href = `search.html?q=${encodeURIComponent(query)}`;
     };
 
     if (headerSearchButton) {
@@ -217,45 +333,90 @@ document.addEventListener('DOMContentLoaded', () => {
             // Pre-fill the search bar on the results page
             if(headerSearchInput) headerSearchInput.value = query;
 
-            // Fetch the book data and perform the search
-            fetch('js/books.json')
-                .then(response => response.json())
-                .then(books => {
-                    const filteredBooks = books.filter(book => {
-                        const searchTerm = query.toLowerCase();
-                        const title = book.title.toLowerCase();
-                        const author = book.author.toLowerCase();
-                        return title.includes(searchTerm) || author.includes(searchTerm);
-                    });
-
-                    if (filteredBooks.length > 0) {
-                        displayBooks(filteredBooks, resultsContainer);
-                    } else {
-                        noResultsMessage.style.display = 'block';
-                    }
-                })
-                .catch(error => {
-                    console.error('Error fetching book data:', error);
-                    resultsContainer.innerHTML = '<p>There was an error loading book data. Please try again later.</p>';
+            // Use the embedded book data directly instead of fetching a file.
+            try {
+                const filteredBooks = allBooksData.filter(book => {
+                    const searchTerm = query.toLowerCase();
+                    const title = book.title.toLowerCase();
+                    const author = book.author.toLowerCase();
+                    return title.includes(searchTerm) || author.includes(searchTerm);
                 });
+
+                if (filteredBooks.length > 0) {
+                    displayBooks(filteredBooks, resultsContainer);
+                } else {
+                    noResultsMessage.style.display = 'block';
+                }
+            } catch (error) {
+                console.error('Error processing book data:', error);
+                resultsContainer.innerHTML = '<p>There was an error displaying book data. Please try again later.</p>';
+            }
         } else {
             resultsHeading.textContent = 'Please enter a search term.';
         }
     }
 
+    // --- NEW: Global Sorting Logic for Category Pages ---
+    // This logic works on any page with a sort dropdown and a book grid.
+    const sortDropdown = document.getElementById('sort-by-price');
+    const bookGrid = document.querySelector('.book-grid');
+    const mainContent = document.querySelector('main'); // Get the main content area
+
+    if (sortDropdown && bookGrid) {
+        sortDropdown.addEventListener('change', (e) => {
+            const sortValue = e.target.value;
+
+            if (sortValue === 'default') {
+                // A simple way to reset to the original order is to reload the page.
+                window.location.reload();
+                return;
+            }
+
+            // Create a mutable copy of all books to be sorted
+            let sortedBooks = [...allBooksData];
+
+            // Sort the entire book collection based on the selected option
+            sortedBooks.sort((a, b) => {
+                const priceA = parseFloat(a.price.replace('R', ''));
+                const priceB = parseFloat(b.price.replace('R', ''));
+                return sortValue === 'asc' ? priceA - priceB : priceB - priceA;
+            });
+
+            // Create a new, clean layout for the sorted results, similar to the search page
+            if (mainContent) {
+                mainContent.innerHTML = `
+                    <section class="content-section">
+                        <h2>All Books Sorted by Price</h2>
+                        <div class="book-grid" id="sorted-results-grid">
+                            <!-- Sorted books will be inserted here -->
+                        </div>
+                    </section>
+                `;
+                const newGrid = document.getElementById('sorted-results-grid');
+                displayBooks(sortedBooks, newGrid);
+            }
+        });
+    }
+
     // Helper function to display books on the search results page (search.html)
-    // This function remains unchanged as it's specific to search.html's dynamic content loading.
     function displayBooks(books, container) {
         container.innerHTML = ''; // Clear previous results
         books.forEach(book => {
+            // The data-* attributes are crucial for the "Add to Cart" functionality to work correctly.
+            // They store the book's details, which are read when the button is clicked.
+            // The price is parsed to a number to ensure it's handled correctly in the cart logic.
+            const priceValue = parseFloat(book.price.replace('R', ''));
+
             const bookCardHTML = `
-                <div class="book-card">
+                <div class="book-card" data-title="${book.title}" data-author="${book.author}" data-price="${priceValue}" data-image="${book.image}">
                     <img src="${book.image}" alt="${book.title}">
                     <div class="book-info">
                         <h3>${book.title}</h3>
                         <p class="author">${book.author}</p>
+                        <p class="summary">${book.summary}</p>
+                        <p><strong>Review/Rating:</strong> ${book.review}</p>
                         <p class="price">${book.price}</p>
-                        <a href="cart.html" class="btn">Add to Cart</a>
+                        <a href="#" class="btn">Add to Cart</a>
                     </div>
                 </div>`;
             container.innerHTML += bookCardHTML;

@@ -150,6 +150,29 @@ p {
     gap: 0.5rem;
 }
 
+/* Container for the sort dropdown, placed next to the search bar on the search page */
+.sort-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for the sort dropdown to match the site's aesthetic */
+.sort-dropdown {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.sort-dropdown:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
+}
+
 /* Search input field styling. */
 .search-bar input {
     flex-grow: 1;
@@ -653,6 +676,23 @@ p {
     margin-bottom: 1rem;
 }
 
+/* This rule specifically targets images within any book card, ensuring they are always sized correctly,
+   including on the search results page where the .book-grid class is not present. */
+.book-card img {
+    width: 100%;
+    height: 320px; /* Sets a fixed height for consistency */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* This is a more specific rule that ONLY targets images on the search results page.
+   It ensures that no matter what other styles are present, the search result
+   images will have a consistent, smaller size. */
+#search-results-container .book-card img {
+    width: 100%;
+    height: 280px; /* Adjusted height for a more compact look on the search page */
+    object-fit: contain; /* Changed to 'contain' to prevent stretching and ensure the whole image is visible */
+}
+
 /* Lightbox Modal for Images */
 #lightbox {
     position: fixed;
@@ -701,7 +741,6 @@ p {
     border: 1px solid #ccc;
     border-radius: 6px;
     font-family: inherit;
-    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .filter-bar input:focus {
