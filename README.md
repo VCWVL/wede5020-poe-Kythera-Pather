@@ -269,6 +269,67 @@ Several key improvements were made to transition the project from its foundation
 - change the form in service to be like the otheres forms
 
 
+---
+
+# Screenshots of the wesbite
+### Home screen.
+<img width="1898" height="949" alt="image" src="https://github.com/user-attachments/assets/057456c4-c17e-477f-932d-e9699b5add24" />
+<img width="1893" height="947" alt="image" src="https://github.com/user-attachments/assets/3a261066-09e7-4868-aa67-8b29cdb8a314" />
+<img width="1901" height="106" alt="image" src="https://github.com/user-attachments/assets/82744b77-34e4-43cc-91a6-242fc44269c5" />
+
+ ### Events
+ <img width="1895" height="791" alt="image" src="https://github.com/user-attachments/assets/a7acd2ac-b6ad-4d5c-a0fd-ca342f2abd3e" />
+<img width="1899" height="501" alt="image" src="https://github.com/user-attachments/assets/60ec52e1-2368-4b77-8934-3e64964669b1" />
+<img width="1886" height="954" alt="image" src="https://github.com/user-attachments/assets/fff7d176-b1f4-4e87-8e8e-ea472e5e196f" />
+<img width="1898" height="949" alt="image" src="https://github.com/user-attachments/assets/64686e56-2d1d-473d-92e3-1fde0616bfb6" />
+<img width="1900" height="947" alt="image" src="https://github.com/user-attachments/assets/86ac3956-752f-4ad3-97df-dee8bf6e03fa" />
+<img width="1901" height="611" alt="image" src="https://github.com/user-attachments/assets/f5ad958a-7701-4b52-99aa-11c80e22c11e" />
+
+### Store 
+<img width="1897" height="954" alt="image" src="https://github.com/user-attachments/assets/18890d97-6fa8-4235-bd80-6ce32244114b" />
+<img width="1900" height="960" alt="image" src="https://github.com/user-attachments/assets/3fe79fbd-dfd9-423b-b98a-2ad420b76a74" />
+<img width="1904" height="322" alt="image" src="https://github.com/user-attachments/assets/edd94445-4e8d-4d09-900e-07d49a6b7214" />
+
+### About Us
+<img width="1897" height="947" alt="image" src="https://github.com/user-attachments/assets/786a9477-9ff8-489a-a6dd-8f88c9df6014" />
+<img width="1901" height="916" alt="image" src="https://github.com/user-attachments/assets/7299a28d-deab-4d42-966e-58981cbdc6e7" />
+<img width="1901" height="161" alt="image" src="https://github.com/user-attachments/assets/5fb02ba6-0bb2-4970-8291-41f85eeab350" />
+
+### Contact 
+<img width="1895" height="950" alt="image" src="https://github.com/user-attachments/assets/091deaa6-be7c-417b-8c5e-148b591f41d5" />
+<img width="1903" height="914" alt="image" src="https://github.com/user-attachments/assets/f453e81a-b5d9-4036-8386-0cbf312ea28a" />
+<img width="1899" height="340" alt="image" src="https://github.com/user-attachments/assets/274ad60d-ee5d-43ca-a415-a5c749e5c134" />
+
+### Servcies
+<img width="1899" height="340" alt="image" src="https://github.com/user-attachments/assets/9d8feb4f-3f83-4b91-85a6-d8bcf1688468" />
+<img width="1898" height="902" alt="image" src="https://github.com/user-attachments/assets/95fbe752-358c-4ddd-927e-75fd0b8cb1f3" />
+<img width="1891" height="109" alt="image" src="https://github.com/user-attachments/assets/ff27a846-a703-40c8-92e4-aa51b2f39702" />
+
+### Enquiry 
+<img width="1903" height="949" alt="image" src="https://github.com/user-attachments/assets/ccb007e4-e2ac-4e73-9329-bdf6136203d1" />
+<img width="1903" height="611" alt="image" src="https://github.com/user-attachments/assets/045b470b-0ac9-4012-831b-6643caa17934" />
+
+### Cart
+<img width="1896" height="946" alt="image" src="https://github.com/user-attachments/assets/0b107adc-2d03-40c4-87bc-5f62c332dc22" />
+<img width="1900" height="222" alt="image" src="https://github.com/user-attachments/assets/c3724ccb-039a-40cc-8523-f9bc8c11d0fb" />
+
+### Checkout 
+<img width="1897" height="943" alt="image" src="https://github.com/user-attachments/assets/ee8a496e-37d4-4a72-b86d-5c8396bc7cdc" />
+<img width="1900" height="273" alt="image" src="https://github.com/user-attachments/assets/59dfe783-bdd7-44fb-a944-6d6843d407ed" />
+#### When pressed "Comfirm Buttton"
+<img width="1902" height="958" alt="image" src="https://github.com/user-attachments/assets/c2bdea41-d35d-41a9-aa50-a38cbe7badca" />
+#### When pressed ok on the pop-up
+<img width="1897" height="939" alt="image" src="https://github.com/user-attachments/assets/5c92135b-23d4-4403-8476-7053cd1f3d07" />
+
+### Login
+<img width="1904" height="951" alt="image" src="https://github.com/user-attachments/assets/1fc9ebd3-02f8-4379-9796-a1d98fcc3024" />
+<img width="1898" height="126" alt="image" src="https://github.com/user-attachments/assets/02615ee3-405f-4c7d-ba73-39594dbb8e2e" />
+
+### Sign up
+<img width="1902" height="952" alt="image" src="https://github.com/user-attachments/assets/0c599206-e64d-4dfa-abdf-fff8baa252af" />
+<img width="1900" height="255" alt="image" src="https://github.com/user-attachments/assets/3698bdaa-c5b4-44f3-a0ec-960b18873179" />
+
+
 
 
   
