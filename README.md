@@ -277,6 +277,8 @@ Several key improvements were made to transition the project from its foundation
 <img width="1893" height="947" alt="image" src="https://github.com/user-attachments/assets/3a261066-09e7-4868-aa67-8b29cdb8a314" />
 <img width="1901" height="106" alt="image" src="https://github.com/user-attachments/assets/82744b77-34e4-43cc-91a6-242fc44269c5" />
 
+---
+
  ### Events
  <img width="1895" height="791" alt="image" src="https://github.com/user-attachments/assets/a7acd2ac-b6ad-4d5c-a0fd-ca342f2abd3e" />
 <img width="1899" height="501" alt="image" src="https://github.com/user-attachments/assets/60ec52e1-2368-4b77-8934-3e64964669b1" />
@@ -285,33 +287,47 @@ Several key improvements were made to transition the project from its foundation
 <img width="1900" height="947" alt="image" src="https://github.com/user-attachments/assets/86ac3956-752f-4ad3-97df-dee8bf6e03fa" />
 <img width="1901" height="611" alt="image" src="https://github.com/user-attachments/assets/f5ad958a-7701-4b52-99aa-11c80e22c11e" />
 
+---
+
 ### Store 
 <img width="1897" height="954" alt="image" src="https://github.com/user-attachments/assets/18890d97-6fa8-4235-bd80-6ce32244114b" />
 <img width="1900" height="960" alt="image" src="https://github.com/user-attachments/assets/3fe79fbd-dfd9-423b-b98a-2ad420b76a74" />
 <img width="1904" height="322" alt="image" src="https://github.com/user-attachments/assets/edd94445-4e8d-4d09-900e-07d49a6b7214" />
+
+---
 
 ### About Us
 <img width="1897" height="947" alt="image" src="https://github.com/user-attachments/assets/786a9477-9ff8-489a-a6dd-8f88c9df6014" />
 <img width="1901" height="916" alt="image" src="https://github.com/user-attachments/assets/7299a28d-deab-4d42-966e-58981cbdc6e7" />
 <img width="1901" height="161" alt="image" src="https://github.com/user-attachments/assets/5fb02ba6-0bb2-4970-8291-41f85eeab350" />
 
+---
+
 ### Contact 
 <img width="1895" height="950" alt="image" src="https://github.com/user-attachments/assets/091deaa6-be7c-417b-8c5e-148b591f41d5" />
 <img width="1903" height="914" alt="image" src="https://github.com/user-attachments/assets/f453e81a-b5d9-4036-8386-0cbf312ea28a" />
 <img width="1899" height="340" alt="image" src="https://github.com/user-attachments/assets/274ad60d-ee5d-43ca-a415-a5c749e5c134" />
+
+---
 
 ### Servcies
 <img width="1899" height="340" alt="image" src="https://github.com/user-attachments/assets/9d8feb4f-3f83-4b91-85a6-d8bcf1688468" />
 <img width="1898" height="902" alt="image" src="https://github.com/user-attachments/assets/95fbe752-358c-4ddd-927e-75fd0b8cb1f3" />
 <img width="1891" height="109" alt="image" src="https://github.com/user-attachments/assets/ff27a846-a703-40c8-92e4-aa51b2f39702" />
 
+---
+
 ### Enquiry 
 <img width="1903" height="949" alt="image" src="https://github.com/user-attachments/assets/ccb007e4-e2ac-4e73-9329-bdf6136203d1" />
 <img width="1903" height="611" alt="image" src="https://github.com/user-attachments/assets/045b470b-0ac9-4012-831b-6643caa17934" />
 
+---
+
 ### Cart
 <img width="1896" height="946" alt="image" src="https://github.com/user-attachments/assets/0b107adc-2d03-40c4-87bc-5f62c332dc22" />
 <img width="1900" height="222" alt="image" src="https://github.com/user-attachments/assets/c3724ccb-039a-40cc-8523-f9bc8c11d0fb" />
+
+---
 
 ### Checkout 
 <img width="1897" height="943" alt="image" src="https://github.com/user-attachments/assets/ee8a496e-37d4-4a72-b86d-5c8396bc7cdc" />
@@ -321,15 +337,61 @@ Several key improvements were made to transition the project from its foundation
 #### When pressed ok on the pop-up
 <img width="1897" height="939" alt="image" src="https://github.com/user-attachments/assets/5c92135b-23d4-4403-8476-7053cd1f3d07" />
 
+---
+
 ### Login
 <img width="1904" height="951" alt="image" src="https://github.com/user-attachments/assets/1fc9ebd3-02f8-4379-9796-a1d98fcc3024" />
 <img width="1898" height="126" alt="image" src="https://github.com/user-attachments/assets/02615ee3-405f-4c7d-ba73-39594dbb8e2e" />
+
+---
 
 ### Sign up
 <img width="1902" height="952" alt="image" src="https://github.com/user-attachments/assets/0c599206-e64d-4dfa-abdf-fff8baa252af" />
 <img width="1900" height="255" alt="image" src="https://github.com/user-attachments/assets/3698bdaa-c5b4-44f3-a0ec-960b18873179" />
 
+---
+ ### Fiction
+ <img width="1899" height="947" alt="image" src="https://github.com/user-attachments/assets/3732164d-4bc5-4af4-87ea-af65e6b9f3c0" />
+<img width="1904" height="727" alt="image" src="https://github.com/user-attachments/assets/d03883b2-34f9-4050-9c13-d10d9ff19f15" />
 
+ ---
+
+ ### Non-Fiction 
+ <img width="1908" height="945" alt="image" src="https://github.com/user-attachments/assets/4e1d0c26-cb40-4406-adf0-efb52657947a" />
+<img width="1904" height="890" alt="image" src="https://github.com/user-attachments/assets/b656e4a6-810d-4fb2-ab98-d8a32068c963" />
+<img width="1904" height="114" alt="image" src="https://github.com/user-attachments/assets/bd3500b2-67d3-4e78-849b-9a83b93a9827" />
+
+---
+
+###  Children
+<img width="1899" height="956" alt="image" src="https://github.com/user-attachments/assets/917d7321-ffc2-4c32-8ee0-7a4e7774bf78" />
+<img width="1899" height="922" alt="image" src="https://github.com/user-attachments/assets/cdf32d14-f89e-480e-a705-537d5b16a269" />
+
+ ---
+
+### Autobiographies 
+<img width="1899" height="956" alt="image" src="https://github.com/user-attachments/assets/89586d56-57c7-4f73-9481-57f24a00cc80" />
+<img width="1902" height="951" alt="image" src="https://github.com/user-attachments/assets/310c431a-a142-4095-9af3-7b13777b7dc8" />
+
+---
+
+### BookTok
+<img width="1900" height="959" alt="image" src="https://github.com/user-attachments/assets/4a9aeeb2-d067-403c-8e4f-9a6fa98e4dfe" />
+<img width="1896" height="952" alt="image" src="https://github.com/user-attachments/assets/d710f616-deaf-4d27-b068-bec08cb1b477" />
+
+---
+
+### Religion
+<img width="1899" height="960" alt="image" src="https://github.com/user-attachments/assets/82955093-ba45-42cd-b53e-7e96257abb65" />
+<img width="1900" height="956" alt="image" src="https://github.com/user-attachments/assets/3eb08ab0-8398-4a97-8dc1-8c303cf4863f" />
+
+---
+
+### Biography 
+<img width="1899" height="954" alt="image" src="https://github.com/user-attachments/assets/2e065725-9407-4d1d-b370-8c81cc331fb7" />
+<img width="1895" height="948" alt="image" src="https://github.com/user-attachments/assets/8f3c239c-3d51-43fe-a77a-6dcab1efb1db" />
+
+ 
 
 
   
