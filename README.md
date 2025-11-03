@@ -64,7 +64,11 @@ For spiritual seekers, the Religion Page is a dedicated space for religious and 
 
 15. Biography Page
 Dive into the lives of famous figures on the Biography Page. This section covers books written about well-known people, appealing to anyone interested in history, politics, and the lives that shaped our world.
+
+16. checkout Page - Added
+This allows the customer to finalise their items and shopping and allows them to proceed with purchsing the items. 
 ---
+
 
 # website goals and objectives 
 Our main goal is to build an outstanding online home for Exclusive Books that makes it easy and enjoyable for everyone to buy books. We want to be a top choice for readers by offering a website that's both professional and simple to use.
@@ -136,6 +140,11 @@ week 9 to 13
 Part 2 of the project focused on bringing the website to life with visual design and styling. The primary goal was to apply CSS to transform the basic HTML structure from Part 1 into a visually appealing, professional, and user-friendly website. Key tasks included defining a consistent color scheme, selecting and applying fonts, and creating layouts for all pages. A major emphasis was placed on responsive design to ensure the website functions and looks great on all devices, including desktops, tablets, and mobile phones. This phase also involved refining the user experience by improving navigation and readability.
 
 ---
+
+# Part 3 Details
+Part 3 of the projectwas asked to add JaveScript and make improvements from part 2.here we have to bring the website tolive and has to be functioning and working with the java code. The learners were asked to add certain features or function into their website. The primary goal was to implement core functionalities such as a global search feature, a complete shopping cart system using `localStorage` for data persistence, and a seamless checkout process. Additionally, user experience was significantly enhanced by adding dynamic features like live filtering and price sorting on category pages, an image lightbox, a welcome modal, and advanced form handling that provides immediate on-page feedback without requiring a page reload. This phase brought the website to life, making it a functional and modern online bookstore.
+
+---
 # Changes from Part 1 to Part 2
 Several key improvements were made to transition the project from its foundational HTML structure to a styled and functional website:
 
@@ -145,6 +154,18 @@ Several key improvements were made to transition the project from its foundation
 - **New Pages:** A **Login** and **Signup** page were added to build out the user account functionality.
 - **Descriptive Comments:** Comments were added to both the HTML and CSS files to explain the purpose of different code sections, improving code readability and maintainability.
 - **Layout Consistency:** Corrected structural HTML and refined CSS rules to ensure a consistent layout and spacing across all pages, resolving issues where the homepage appeared different from other pages.
+
+---
+
+# Changes from Part 2 to Part 3
+- **Added JavaScript:** Created js/main.js to make the website interactive.
+- **Built Shopping Cart:** Implemented a full shopping cart system using localStorage, including "Add to Cart," a cart page, and a checkout process.
+- **Enabled Search:** Made the global search bar functional, leading to a dynamic search results page.
+- **Created Dynamic Filters:** Added live filtering and price sorting to category pages.
+- **Enhanced User Experience:** Included interactive features like a welcome modal, an image lightbox, and an FAQ accordion.
+- **Improved Forms:** Upgraded forms to provide instant, on-page feedback without reloading the page.
+- **New Page:** Added a checkout page from where it can get accessed once the customer is ready to finalise their purchase from the cart screen. 
+
 
 ---
 # Sitemap
@@ -217,10 +238,36 @@ Several key improvements were made to transition the project from its foundation
 - **New Pages:** Added **Login** and **Signup** pages to build out user account functionality.
 
 ### POE-Final
-- Made chnageres from feedback given from lecture on part 2. Added typography styles to improve as the text elements are styled, but there was a need for areas for improvement. Improved Pseudo-classes as they are used but incorrectly or insufficiently. The Interactive elements are styled, but there were significant issues.
+
+#### (28/10/2025)- started changes 
+- Made changeres from feedback given from lecture on part 2. Added typography styles to improve as the text elements are styled, but there was a need for areas for improvement. Improved Pseudo-classes as they are used but incorrectly or insufficiently. The Interactive elements are styled, but there were significant issues.
 - Added a Proceed to checkout page for te customer to comfirm their order.
-- Added a Main java and book java files for the Website to function and searchbar to work and find different books.
-- -Had to chnage some html code to fit th search bar and add to cart feature.
+- -Had to change some html code to fit th search bar and add to cart feature.
+
+#### (29/10/2025)
+- Implemented the global header search bar to redirect to a new `search.html` page.
+- Developed the logic on `search.html` to parse the URL query, filter the book data, and dynamically display search results.
+- Implements a feature on events to search for the event and it comes up. its a seprate search bar on its own. 
+
+#### (30/10/2025)
+- Added the "Add to Cart" functionality, using `localStorage` to persist cart data across pages.
+- Created the `cart.html` page with JavaScript to dynamically display items, quantities, and totals. Implemented "Remove" and "Clear Cart" features.
+- Created the `proceedCheckout.html` page to display a final order summary.
+- Implemented the "Confirm Purchase" functionality, which clears the cart from `localStorage` and displays a confirmation message before redirecting to the homepage.
+
+#### (1/11/2025)
+- Enhanced user experience by adding more interactive features: an image lightbox for book covers, a welcome modal for first-time visitors, and an accordion for the FAQ section.
+- Implemented advanced JavaScript-powered form handling for the Enquiry, Contact, and Service Feedback forms to provide instant, on-page responses without page reloads.
+
+#### (2/11/2025)
+-Fixed the error in the search bar that allos the user to search for any book in any section or screen and shows the user the book. 
+- Added dynamic content features to category pages, including a live filter bar and a "Sort by Price" dropdown to re-order all books on the page.
+- -The drop down feature shows the user the books on price depending on what the choose, like high to low or low to high in pricing of books.
+
+#### (3/11/2025)
+- Finshing up on the coding and checking mark scheme
+- change the form in service to be like the otheres forms
+
 
 
 
